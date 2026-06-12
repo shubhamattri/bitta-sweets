@@ -338,7 +338,7 @@ The footer includes links to Instagram and Facebook (lines 422–425):
 The footer contact link (line 427):
 
 ```html
-<a href="mailto:hello@bittasweets.in">hello@bittasweets.in</a>
+<a href="mailto:hello@bittasweetsandbakers.com">hello@bittasweetsandbakers.com</a>
 ```
 
 **Replace with your actual email:**
@@ -353,7 +353,7 @@ The footer contact link (line 427):
 Before going live, verify these details:
 
 - [ ] **Phone number** — Confirm `+919815521990` is replaced with your actual WhatsApp/call number
-- [ ] **Email address** — Replace `hello@bittasweets.in` in footer
+- [ ] **Email address** — Replace `hello@bittasweetsandbakers.com` in footer
 - [ ] **Menu & prices** — Compare all product names and prices against your current shop rate board
 - [ ] **Photos** — Verify all 13 product images are yours or properly licensed
 - [ ] **FSSAI License** — Confirm `12122281000069` is your actual license number
@@ -569,4 +569,4 @@ For questions or enhancements:
 **Website:** Bitta Sweets & Bakery, Kalbutri Gate, Gurdaspur, Punjab 143521  
 **FSSAI License:** 12122281000069  
 **Contact:** +91 98155 21990 (WhatsApp)  
-**Email:** hello@bittasweets.in
+**Email:** hello@bittasweetsandbakers.com
