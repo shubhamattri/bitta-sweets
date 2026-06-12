@@ -133,7 +133,7 @@ All browsers are supported. No npm install, no build, no dependencies.
 
 ### 1. Phone Number & WhatsApp Links
 
-The phone number `+91 98155 21990` (displayed as `+919815521990`) appears in:
+The phone number `+91 81959 47999` (displayed as `+918195947999`) appears in:
 
 **In HTML:**
 - Line 47: Nav CTA button (`nav__cta`)
@@ -142,16 +142,16 @@ The phone number `+91 98155 21990` (displayed as `+919815521990`) appears in:
 
 **Quick find-and-replace:**
 ```
-Find:     919815521990
+Find:     918195947999
 Replace:  <new 10-digit number without +91>
 
-Find:     +919815521990
+Find:     +918195947999
 Replace:  +91<new 10-digit>
 
-Find:     https://wa.me/919815521990
+Find:     https://wa.me/918195947999
 Replace:  https://wa.me/+91<new 10-digit>
 
-Find:     tel:+919815521990
+Find:     tel:+918195947999
 Replace:  tel:+91<new 10-digit>
 ```
 
@@ -312,7 +312,7 @@ The footer (lines 400–430) displays:
 <p>
   <b>Bitta Sweets & Bakery</b><br />
   Kalbutri Gate, Gurdaspur, Punjab <b>143521</b><br />
-  <a href="tel:+919815521990">+91 98155 21990</a>
+  <a href="tel:+918195947999">+91 81959 47999</a>
 </p>
 ```
 
@@ -352,7 +352,7 @@ The footer contact link (line 427):
 
 Before going live, verify these details:
 
-- [ ] **Phone number** — Confirm `+919815521990` is replaced with your actual WhatsApp/call number
+- [ ] **Phone number** — Confirm `+918195947999` is replaced with your actual WhatsApp/call number
 - [ ] **Email address** — Replace `hello@bittasweetsandbakers.com` in footer
 - [ ] **Menu & prices** — Compare all product names and prices against your current shop rate board
 - [ ] **Photos** — Verify all 13 product images are yours or properly licensed
@@ -431,7 +431,7 @@ Before going live, verify these details:
        "postalCode": "143521",
        "addressCountry": "IN"
      },
-     "telephone": "+919815521990",
+     "telephone": "+918195947999",
      "url": "https://yourdomain.com",
      "foundingDate": "1990"
    }
@@ -485,7 +485,7 @@ No CGI, no server-side scripts, no database.
 - Use absolute paths if images are in a subfolder
 
 ### WhatsApp links not working
-- Confirm phone number format: `+<country code><number>` (e.g., `+919815521990`)
+- Confirm phone number format: `+<country code><number>` (e.g., `+918195947999`)
 - Test on mobile where WhatsApp is installed
 - Check URL encoding in href
 
@@ -568,5 +568,5 @@ For questions or enhancements:
 **Handover Date:** June 12, 2026  
 **Website:** Bitta Sweets & Bakery, Kalbutri Gate, Gurdaspur, Punjab 143521  
 **FSSAI License:** 12122281000069  
-**Contact:** +91 98155 21990 (WhatsApp)  
+**Contact:** +91 81959 47999 (WhatsApp)  
 **Email:** hello@bittasweetsandbakers.com

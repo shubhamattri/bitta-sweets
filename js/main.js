@@ -31,11 +31,13 @@
   burger.addEventListener("click", () => {
     burger.classList.toggle("is-open");
     links.classList.toggle("is-open");
+    document.body.style.overflow = links.classList.contains("is-open") ? "hidden" : "";
   });
   $$("#navLinks a").forEach(a =>
     a.addEventListener("click", () => {
       burger.classList.remove("is-open");
       links.classList.remove("is-open");
+      document.body.style.overflow = "";
     })
   );
 
