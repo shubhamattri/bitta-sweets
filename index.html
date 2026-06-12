@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bitta Sweets — Heritage Sweets &amp; Bakers · Gurdaspur, Punjab · Since 1990</title>
+  <meta name="description" content="Bitta Sweets &amp; Bakers, Gurdaspur — handcrafting Punjab's most loved mithai, fresh bakery, chaat counter and festive gift boxes since 1990. Pure desi ghee. Three generations of sweetness." />
+  <meta property="og:title" content="Bitta Sweets — Since 1990" />
+  <meta property="og:description" content="Heritage sweets &amp; bakers of Gurdaspur, Punjab. Pure desi ghee mithai, fresh bakery, festive gift boxes." />
+  <meta property="og:image" content="assets/hero.jpg" />
+  <link rel="icon" type="image/png" href="assets/logo-full.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Jost:ital,wght@0,300..600;1,300..600&family=Noto+Serif+Gurmukhi:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ░░ PRELOADER ░░ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__ring"><span>B</span><span class="preloader__s">S</span></div>
+      <p class="preloader__since">SINCE 1990</p>
+      <div class="preloader__bar"><i></i></div>
+    </div>
+  </div>
+
+  <!-- ░░ GOLD DUST + CURSOR ░░ -->
+  <canvas id="dust" aria-hidden="true"></canvas>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- ░░ NAV ░░ -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand">
+      <span class="nav__monogram">B<small>S</small></span>
+      <span class="nav__name">BITTA <em>SWEETS</em><b>SINCE 1990 · GURDASPUR</b></span>
+    </a>
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#heritage">Our Story</a>
+      <a href="#signature">Signature</a>
+      <a href="#menu">Menu</a>
+      <a href="#bakery">Bakery</a>
+      <a href="#gifting">Gifting</a>
+      <a href="#visit">Visit Us</a>
+    </nav>
+    <a class="btn btn--rose nav__cta" href="https://wa.me/919815521990?text=Namaste%20Bitta%20Sweets!%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.7-1.3 1.3-1.9 1.3-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .7.5.2.6.8 2 .9 2.1.1.2.1.3 0 .5-.1.2-.1.3-.3.5l-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.2.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.4.1.1.1.7-.1 1.2Z"/></svg>
+      Order on WhatsApp
+    </a>
+    <button class="nav__burger" id="burger" aria-label="Open menu"><span></span><span></span></button>
+  </header>
+
+  <main id="top">
+
+    <!-- ░░ HERO ░░ -->
+    <section class="hero" id="hero">
+      <div class="hero__media" data-parallax="0.18">
+        <img src="assets/hero.jpg" alt="An opulent spread of Bitta Sweets mithai — gulab jamun, jalebi, kaju katli and ladoo in brass thalis" />
+      </div>
+      <div class="hero__veil" aria-hidden="true"></div>
+      <div class="hero__steam" aria-hidden="true"><i></i><i></i><i></i></div>
+
+      <div class="hero__content">
+        <p class="hero__gurmukhi reveal-line" lang="pa">ਮਿਠਾਸ, ਵਿਰਾਸਤ ਦੀ — Sweetness, inherited.</p>
+        <h1 class="hero__title" aria-label="Three generations of melt-in-the-mouth">
+          <span class="hero__word"><i>Three</i></span>
+          <span class="hero__word"><i>generations</i></span>
+          <span class="hero__word hero__word--italic"><i>of</i></span>
+          <span class="hero__word hero__word--rose"><i>melt-in-the-mouth.</i></span>
+        </h1>
+        <p class="hero__sub reveal-line">Gurdaspur's beloved halwais &amp; bakers since <b>1990</b>. Pure desi-ghee mithai,
+          oven-fresh bakery and gift boxes that make every shagun sweeter.</p>
+        <div class="hero__cta reveal-line">
+          <a href="#signature" class="btn btn--rose btn--lg" data-magnetic>Taste the Signatures</a>
+          <a href="#visit" class="btn btn--ghost btn--lg" data-magnetic>Visit the Shop</a>
+        </div>
+        <div class="hero__badges reveal-line">
+          <span>★ 4.9 · 2,100+ Google reviews</span><i>•</i>
+          <span>FSSAI certified kitchen</span><i>•</i>
+          <span>100% pure desi ghee</span>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#heritage" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ░░ MARQUEE ░░ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Dodha Barfi</span><i>✦</i><span>Gulab Jamun</span><i>✦</i><span>Kaju Katli</span><i>✦</i><span>Motichoor Ladoo</span><i>✦</i><span>Jalebi</span><i>✦</i><span>Rasmalai</span><i>✦</i><span>Pinni</span><i>✦</i><span>Milk Cake</span><i>✦</i><span>Kalakand</span><i>✦</i><span>Patisa</span><i>✦</i><span>Milk Pedha</span><i>✦</i><span>Cham Cham</span><i>✦</i><span>Khoya Barfi</span><i>✦</i>
+        <span>Dodha Barfi</span><i>✦</i><span>Gulab Jamun</span><i>✦</i><span>Kaju Katli</span><i>✦</i><span>Motichoor Ladoo</span><i>✦</i><span>Jalebi</span><i>✦</i><span>Rasmalai</span><i>✦</i><span>Pinni</span><i>✦</i><span>Milk Cake</span><i>✦</i><span>Kalakand</span><i>✦</i><span>Patisa</span><i>✦</i><span>Milk Pedha</span><i>✦</i><span>Cham Cham</span><i>✦</i><span>Khoya Barfi</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ░░ HERITAGE ░░ -->
+    <section class="heritage section" id="heritage">
+      <div class="heritage__media reveal" data-tilt>
+        <img src="assets/shop.jpg" alt="Inside the Bitta Sweets shop — brass lamps over glass counters of fresh mithai" loading="lazy" />
+        <figure class="heritage__stamp" aria-hidden="true"><span>EST.</span><b>1990</b><span>GURDASPUR</span></figure>
+      </div>
+      <div class="heritage__copy">
+        <p class="eyebrow reveal">ਸਾਡੀ ਕਹਾਣੀ · OUR STORY</p>
+        <h2 class="reveal">One karahi, one family,<br /><em>thirty-six years of bhog.</em></h2>
+        <p class="reveal">It began in 1990 with a single iron karahi at Gurdaspur's Kalbutri Gate — and a stubborn
+          promise: <b>nothing leaves this kitchen that we wouldn't serve at our own daughter's wedding.</b>
+          Today the third generation still skims the khoya at dawn, still sets the dodha low and slow for six hours,
+          still brushes every kaju katli with real chandi ka vark.</p>
+        <p class="reveal">No premixes. No shortcuts. Just milk from the same dairies for three decades,
+          desi ghee by the tin, and recipes written in a notebook nobody is allowed to photocopy.</p>
+        <div class="heritage__stats">
+          <div class="stat reveal"><b data-count="36">0</b><span>Years of craft</span></div>
+          <div class="stat reveal"><b data-count="120">0</b><span>Handmade items daily</span></div>
+          <div class="stat reveal"><b data-count="9000">0</b><span>Weddings served</span></div>
+          <div class="stat reveal"><b data-count="3">0</b><span>Generations of halwais</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ SYRUP DIVIDER ░░ -->
+    <div class="drip" aria-hidden="true">
+      <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0,0 L1440,0 L1440,28 C1380,28 1370,72 1330,72 C1290,72 1295,28 1240,28 C1170,28 1175,55 1120,55 C1065,55 1070,28 1000,28 C940,28 945,84 895,84 C845,84 855,28 780,28 C710,28 715,48 660,48 C605,48 610,28 540,28 C480,28 485,66 435,66 C385,66 395,28 320,28 C250,28 255,52 200,52 C145,52 150,28 80,28 C40,28 30,28 0,28 Z" /></svg>
+    </div>
+
+    <!-- ░░ SIGNATURE COLLECTION ░░ -->
+    <section class="signature section" id="signature">
+      <div class="section__head">
+        <p class="eyebrow reveal">ਖ਼ਾਸ ਮਠਿਆਈਆਂ · THE SIGNATURE COLLECTION</p>
+        <h2 class="reveal">Jewels of the <em>counter</em></h2>
+        <p class="section__lede reveal">Eight house legends, made before sunrise and rarely lasting past sunset.
+          Every tray is weighed, garnished and packed by hand.</p>
+      </div>
+
+      <div class="cards" id="cards">
+        <article class="card reveal" data-tilt>
+          <div class="card__media"><img src="assets/chenamurki.jpg" alt="Chena murki — sugar-glazed chenna cubes" loading="lazy" /><span class="card__tag">House Favourite</span></div>
+          <div class="card__body">
+            <h3>Chena Murki <span lang="pa">ਛੈਣਾ ਮੁਰਕੀ</span></h3>
+            <p>Soft chenna cubes tumbled in crystallised sugar till they turn pearly — light, glossy and dangerously poppable.</p>
+            <div class="card__foot"><b>₹ 520 / kg</b><a class="card__order" href="https://wa.me/919815521990?text=I%27d%20like%20to%20order%20Chena%20Murki" target="_blank" rel="noopener">Order →</a></div>
+          </div>
+        </article>
+
+        <article class="card reveal" data-tilt>
+          <div class="card__media"><img src="assets/milkcake.jpg" alt="Milk cake squares with caramelised edges" loading="lazy" /><span class="card__tag">Most Loved</span></div>
+          <div class="card__body">
+            <h3>Milk Cake <span lang="pa">ਮਿਲਕ ਕੇਕ</span></h3>
+            <p>Slow-grained milk fudge, caramelised at the edges and soft at the heart — the brown-and-ivory classic of our counter.</p>
+            <div class="card__foot"><b>₹ 540 / kg</b><a class="card__order" href="https://wa.me/919815521990?text=I%27d%20like%20to%20order%20Milk%20Cake" target="_blank" rel="noopener">Order →</a></div>
+          </div>
+        </article>
+
+        <article class="card reveal" data-tilt>
+          <div class="card__media"><img src="assets/kajukatli.jpg" alt="Silver-leafed kaju katli diamonds" loading="lazy" /><span class="card__tag">Most Gifted</span></div>
+          <div class="card__body">
+            <h3>Kaju Katli <span lang="pa">ਕਾਜੂ ਕਤਲੀ</span></h3>
+            <p>Whole-cashew diamonds rolled thin, finished with genuine silver vark. The box that opens every celebration.</p>
+            <div class="card__foot"><b>₹ 1000 / kg</b><a class="card__order" href="https://wa.me/919815521990?text=I%27d%20like%20to%20order%20Kaju%20Katli" target="_blank" rel="noopener">Order →</a></div>
+          </div>
+        </article>
+
+        <article class="card reveal" data-tilt>
+          <div class="card__media"><img src="assets/jalebi.jpg" alt="Crisp golden jalebi with stretching syrup" loading="lazy" /><span class="card__tag">Fried Fresh Hourly</span></div>
+          <div class="card__body">
+            <h3>Kesar Jalebi <span lang="pa">ਜਲੇਬੀ</span></h3>
+            <p>Shatter-crisp coils of fermented batter, dunked in saffron syrup while still singing from the karahi.</p>
+            <div class="card__foot"><b>Fresh from the karahi</b><a class="card__order" href="https://wa.me/919815521990?text=I%27d%20like%20to%20order%20Kesar%20Jalebi" target="_blank" rel="noopener">Order →</a></div>
+          </div>
+        </article>
+
+        <article class="card reveal" data-tilt>
+          <div class="card__media"><img src="assets/ladoo.jpg" alt="Motichoor ladoo broken open showing moist interior" loading="lazy" /><span class="card__tag">Shagun Special</span></div>
+          <div class="card__body">
+            <h3>Motichoor Ladoo <span lang="pa">ਮੋਤੀਚੂਰ ਲੱਡੂ</span></h3>
+            <p>Pearl-fine boondi bound in ghee and cardamom — the ladoo every Gurdaspur shagun envelope arrives with.</p>
+            <div class="card__foot"><b>₹ 240 / kg</b><a class="card__order" href="https://wa.me/919815521990?text=I%27d%20like%20to%20order%20Motichoor%20Ladoo" target="_blank" rel="noopener">Order →</a></div>
+          </div>
+        </article>
+
+        <article class="card reveal" data-tilt>
+          <div class="card__media"><img src="assets/rasmalai.jpg" alt="Rasmalai soaking in saffron rabri" loading="lazy" /><span class="card__tag">Chilled Indulgence</span></div>
+          <div class="card__body">
+            <h3>Rasmalai <span lang="pa">ਰਸਮਲਾਈ</span></h3>
+            <p>Cloud-soft chenna discs resting in saffron rabri, crowned with pista. Best eaten cold, ordered double.</p>
+            <div class="card__foot"><b>₹ 50 / piece</b><a class="card__order" href="https://wa.me/919815521990?text=I%27d%20like%20to%20order%20Rasmalai" target="_blank" rel="noopener">Order →</a></div>
+          </div>
+        </article>
+
+        <article class="card reveal" data-tilt>
+          <div class="card__media"><img src="assets/chocobarfi.jpg" alt="Two-layer chocolate barfi with silver leaf" loading="lazy" /><span class="card__tag">Kids' Pick</span></div>
+          <div class="card__body">
+            <h3>Chocolate Barfi <span lang="pa">ਚਾਕਲੇਟ ਬਰਫ਼ੀ</span></h3>
+            <p>Old-school khoya barfi under a dark chocolate crown — where the kids start and the elders quietly finish.</p>
+            <div class="card__foot"><b>₹ 600 / kg</b><a class="card__order" href="https://wa.me/919815521990?text=I%27d%20like%20to%20order%20Chocolate%20Barfi" target="_blank" rel="noopener">Order →</a></div>
+          </div>
+        </article>
+
+        <article class="card reveal" data-tilt>
+          <div class="card__media"><img src="assets/halwa.jpg" alt="Gajar ka halwa steaming in a brass kadhai" loading="lazy" /><span class="card__tag">Seasonal · Dec–Feb</span></div>
+          <div class="card__body">
+            <h3>Gajar Ka Halwa <span lang="pa">ਗਾਜਰ ਦਾ ਹਲਵਾ</span></h3>
+            <p>Red winter carrots slow-cooked in milk and ghee, finished with khoya — sold warm by the kilo, gone by evening.</p>
+            <div class="card__foot"><b>Seasonal · daily rate</b><a class="card__order" href="https://wa.me/919815521990?text=I%27d%20like%20to%20order%20Gajar%20Halwa" target="_blank" rel="noopener">Order →</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ░░ MENU ░░ -->
+    <section class="menu section" id="menu">
+      <div class="section__head">
+        <p class="eyebrow reveal">ਪੂਰਾ ਮੈਨੂ · THE FULL MENU</p>
+        <h2 class="reveal">Everything under <em>our roof</em></h2>
+      </div>
+
+      <div class="menu__tabs reveal" role="tablist" aria-label="Menu categories">
+        <button class="menu__tab is-active" role="tab" aria-selected="true" data-tab="mithai">Mithai</button>
+        <button class="menu__tab" role="tab" aria-selected="false" data-tab="bakery">Bakery</button>
+        <button class="menu__tab" role="tab" aria-selected="false" data-tab="namkeen">Namkeen</button>
+        <button class="menu__tab" role="tab" aria-selected="false" data-tab="festive">Festive &amp; Frozen</button>
+      </div>
+
+      <div class="menu__panels reveal">
+        <div class="menu__panel is-active" data-panel="mithai" role="tabpanel">
+          <ul>
+            <li><span>Dodha Barfi <em>house legend</em></span><i></i><b>₹440/kg</b></li>
+            <li><span>Kaju Katli</span><i></i><b>₹1000/kg</b></li>
+            <li><span>Special Barfi</span><i></i><b>₹540/kg</b></li>
+            <li><span>Malai Barfi</span><i></i><b>₹580/kg</b></li>
+            <li><span>Roasted Barfi</span><i></i><b>₹540/kg</b></li>
+            <li><span>Khoya Barfi</span><i></i><b>₹540/kg</b></li>
+            <li><span>Besan Barfi</span><i></i><b>₹220/kg</b></li>
+            <li><span>Coconut Barfi</span><i></i><b>₹480/kg</b></li>
+            <li><span>Moong Dal Barfi</span><i></i><b>₹600/kg</b></li>
+            <li><span>Chocolate Barfi</span><i></i><b>₹600/kg</b></li>
+            <li><span>Gajerla Barfi</span><i></i><b>₹480/kg</b></li>
+            <li><span>Milk Cake</span><i></i><b>₹540/kg</b></li>
+            <li><span>Kalakand</span><i></i><b>₹540/kg</b></li>
+            <li><span>Milk Pedha</span><i></i><b>₹560/kg</b></li>
+            <li><span>Malai Chaap</span><i></i><b>₹400/kg</b></li>
+            <li><span>Khoya Parwal</span><i></i><b>₹580/kg</b></li>
+            <li><span>Rasmalai</span><i></i><b>₹50/pc</b></li>
+            <li><span>Spongy Rasgulla</span><i></i><b>₹30/pc</b></li>
+            <li><span>Rasgulla</span><i></i><b>₹220/kg</b></li>
+            <li><span>Small Rasgulla</span><i></i><b>₹260/kg</b></li>
+            <li><span>Gulab Jamun</span><i></i><b>₹220/kg</b></li>
+            <li><span>Small Gulab Jamun</span><i></i><b>₹260/kg</b></li>
+            <li><span>Cham Cham <em>black</em></span><i></i><b>₹260/kg</b></li>
+            <li><span>Cham Cham <em>white</em></span><i></i><b>₹260/kg</b></li>
+            <li><span>Chena Murki</span><i></i><b>₹520/kg</b></li>
+            <li><span>Dry Chena Murki</span><i></i><b>₹520/kg</b></li>
+            <li><span>Boondi Laddoo</span><i></i><b>₹200/kg</b></li>
+            <li><span>Besan Laddoo</span><i></i><b>₹200/kg</b></li>
+            <li><span>Motichoor Laddoo</span><i></i><b>₹240/kg</b></li>
+            <li><span>Besan Laddoo <em>desi ghee</em></span><i></i><b>₹600/kg</b></li>
+            <li><span>Chana Laddoo <em>desi ghee</em></span><i></i><b>₹600/kg</b></li>
+            <li><span>Atta Laddoo <em>desi ghee</em></span><i></i><b>₹600/kg</b></li>
+            <li><span>Honey Dry Fruit Laddoo <em>desi ghee</em></span><i></i><b>₹1000/kg</b></li>
+            <li><span>Dal Pinni</span><i></i><b>₹280/kg</b></li>
+            <li><span>Besan Pinni</span><i></i><b>₹260/kg</b></li>
+            <li><span>Dry Fruit Pinni</span><i></i><b>₹600/kg</b></li>
+            <li><span>Alsi Pinni</span><i></i><b>₹400/kg</b></li>
+            <li><span>Panjiri <em>desi ghee</em></span><i></i><b>₹1000/kg</b></li>
+            <li><span>Patisa</span><i></i><b>₹260/kg</b></li>
+            <li><span>Petha</span><i></i><b>₹200/kg</b></li>
+            <li><span>Modak</span><i></i><b>₹560/kg</b></li>
+            <li><span>Khas Khas Roll</span><i></i><b>₹600/kg</b></li>
+            <li><span>Chanderkala <em>desi ghee</em></span><i></i><b>₹600/kg</b></li>
+            <li><span>Pugga</span><i></i><b>₹560/kg</b></li>
+          </ul>
+        </div>
+
+        <div class="menu__panel" data-panel="bakery" role="tabpanel">
+          <ul>
+            <li><span>Celebration Cakes <em>custom, eggless available</em></span><i></i><b>from ₹650/kg</b></li>
+            <li><span>Chocolate Truffle Cake</span><i></i><b>₹750/kg</b></li>
+            <li><span>Fresh Cream Pineapple Cake</span><i></i><b>₹650/kg</b></li>
+            <li><span>Butter Croissants</span><i></i><b>₹60/pc</b></li>
+            <li><span>Veg Patties <em>flaky, spiced</em></span><i></i><b>₹35/pc</b></li>
+            <li><span>Paneer Patties</span><i></i><b>₹45/pc</b></li>
+            <li><span>Atta Biscuits <em>bakery classic</em></span><i></i><b>₹220/kg</b></li>
+            <li><span>Ajwain Mathi Crackers</span><i></i><b>₹240/kg</b></li>
+            <li><span>Melting Moments Cookies</span><i></i><b>₹380/kg</b></li>
+            <li><span>Almond Biscotti</span><i></i><b>₹420/kg</b></li>
+            <li><span>Milk Rusk <em>chai's best friend</em></span><i></i><b>₹180/kg</b></li>
+            <li><span>Fruit Bread / Milk Bread</span><i></i><b>₹55/loaf</b></li>
+            <li><span>Brownies <em>walnut</em></span><i></i><b>₹70/pc</b></li>
+            <li><span>Donuts &amp; Cream Rolls</span><i></i><b>₹40/pc</b></li>
+          </ul>
+        </div>
+
+        <div class="menu__panel" data-panel="namkeen" role="tabpanel">
+          <ul>
+            <li><span>Gol Gappa <em>crisp, tangy, counter fresh</em></span><i></i><b>₹30/plate</b></li>
+            <li><span>Papdi Chaat</span><i></i><b>₹50/plate</b></li>
+            <li><span>Bhalla Papdi Chaat</span><i></i><b>₹60/plate</b></li>
+            <li><span>Samosa <em>fried fresh all day</em></span><i></i><b>₹20/pc</b></li>
+            <li><span>Bread Pakora</span><i></i><b>₹25/pc</b></li>
+            <li><span>Paneer Pakora <em>evenings</em></span><i></i><b>₹320/kg</b></li>
+            <li><span>Aloo Tikki</span><i></i><b>₹30/plate</b></li>
+            <li><span>Chhole Bhature <em>till 2 pm</em></span><i></i><b>₹80/plate</b></li>
+            <li><span>Dahi Bhalla</span><i></i><b>₹60/plate</b></li>
+            <li><span>Bikaneri Bhujia</span><i></i><b>₹320/kg</b></li>
+            <li><span>Mix Namkeen <em>house blend</em></span><i></i><b>₹300/kg</b></li>
+            <li><span>Masala Mathri</span><i></i><b>₹260/kg</b></li>
+            <li><span>Lassi <em>seasonal, malai-topped</em></span><i></i><b>₹50/glass</b></li>
+          </ul>
+        </div>
+
+        <div class="menu__panel" data-panel="festive" role="tabpanel">
+          <ul>
+            <li><span>Assorted Mithai Gift Box <em>500g / 1kg</em></span><i></i><b>₹350 / ₹680</b></li>
+            <li><span>Premium Dry Fruit Box <em>rose-gold packing</em></span><i></i><b>from ₹950</b></li>
+            <li><span>Wedding Bhaji Boxes <em>min. 50 boxes</em></span><i></i><b>custom quote</b></li>
+            <li><span>Diwali Hampers <em>corporate orders welcome</em></span><i></i><b>from ₹750</b></li>
+            <li><span>Rakhi Combo <em>mithai + rakhi</em></span><i></i><b>from ₹450</b></li>
+            <li><span>Lohri Bhugga &amp; Rewari Pack</span><i></i><b>₹380/kg</b></li>
+            <li><span>Karwa Chauth Sargi Thali</span><i></i><b>from ₹850</b></li>
+            <li><span>Frozen Paneer / Khoya <em>our own dairy</em></span><i></i><b>daily rate</b></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="menu__note reveal">Mithai prices from our shop rate board · bakery &amp; namkeen indicative · bulk &amp; wedding rates on request.
+        <a href="tel:+919815521990">Call us</a> for today's fresh list.</p>
+    </section>
+
+    <!-- ░░ BAKERY ░░ -->
+    <section class="bakery section" id="bakery">
+      <div class="bakery__images">
+        <figure class="bakery__img bakery__img--main reveal" data-tilt><img src="assets/cake.jpg" alt="Chocolate ganache celebration cake with a slice cut" loading="lazy" /></figure>
+        <figure class="bakery__img bakery__img--float reveal"><img src="assets/bakery.jpg" alt="Fresh croissants, cookies and rusks from the Bitta bakery ovens" loading="lazy" /></figure>
+      </div>
+      <div class="bakery__copy">
+        <p class="eyebrow reveal">ਬੇਕਰੀ · THE BAKERS' SIDE</p>
+        <h2 class="reveal">And then, the <em>ovens</em></h2>
+        <p class="reveal">Half the shop is a bakery — and it never sleeps. Celebration cakes iced to order
+          (eggless on request), flaky patties for the school rush, atta biscuits that outsell everything at chai time,
+          and bread that's gone before noon.</p>
+        <ul class="gifting__list">
+          <li class="reveal"><b>Custom cakes</b> — birthdays, anniversaries &amp; weddings, 4-hour notice</li>
+          <li class="reveal"><b>Daily bakes</b> — biscuits, rusk, mathi, bread &amp; brownies, fresh every morning</li>
+          <li class="reveal"><b>Savoury counter</b> — samosa, patties &amp; bread pakora, fried through the day</li>
+        </ul>
+        <a class="btn btn--ghost btn--lg reveal" data-magnetic href="https://wa.me/919815521990?text=I%27d%20like%20to%20order%20a%20cake" target="_blank" rel="noopener">Order a Cake</a>
+      </div>
+    </section>
+
+    <!-- ░░ GIFTING ░░ -->
+    <section class="gifting section" id="gifting">
+      <div class="gifting__copy">
+        <p class="eyebrow reveal">ਤੋਹਫ਼ੇ · GIFTING &amp; WEDDINGS</p>
+        <h2 class="reveal">Boxes that do the <em>talking</em></h2>
+        <p class="reveal">From a 500-gram shagun box to a 2,000-guest wedding — we design, fill, ribbon and deliver.
+          Rose-gold rigid boxes, personalised name tags, and mithai chosen for how it travels, not just how it tastes.</p>
+        <ul class="gifting__list">
+          <li class="reveal"><b>Wedding bhaji</b> — custom assortments, doorstep delivery across Gurdaspur &amp; Pathankot</li>
+          <li class="reveal"><b>Corporate hampers</b> — Diwali &amp; New Year, branded sleeves, GST billing</li>
+          <li class="reveal"><b>Same-day gifting</b> — order by 2 pm, delivered in the city by evening</li>
+        </ul>
+        <a class="btn btn--rose btn--lg reveal" data-magnetic href="https://wa.me/919815521990?text=I%27d%20like%20to%20discuss%20a%20gift%20%2F%20wedding%20order" target="_blank" rel="noopener">Plan a Gift Order</a>
+      </div>
+      <div class="gifting__media reveal" data-tilt>
+        <img src="assets/giftbox.jpg" alt="Bitta Sweets festive gift box with rose-gold ribbon, open to show assorted mithai" loading="lazy" />
+        <div class="gifting__shine" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ░░ FESTIVALS ░░ -->
+    <section class="festivals section" id="festivals">
+      <div class="section__head">
+        <p class="eyebrow reveal">ਤਿਉਹਾਰ · THE FESTIVAL CALENDAR</p>
+        <h2 class="reveal">We keep Punjab's <em>sweet time</em></h2>
+      </div>
+      <div class="festivals__rail reveal" id="festRail">
+        <article class="fest"><b>Lohri</b><span>Jan</span><p>Rewari, gajak, bhugga &amp; peanuts by the fire.</p></article>
+        <article class="fest"><b>Holi</b><span>Mar</span><p>Gujiya stuffed with khoya, kanji on the side.</p></article>
+        <article class="fest"><b>Baisakhi</b><span>Apr</span><p>Kada prasad–style atta ladoo &amp; lassi.</p></article>
+        <article class="fest"><b>Rakhi</b><span>Aug</span><p>Kaju katli combos with hand-tied rakhis.</p></article>
+        <article class="fest"><b>Karwa Chauth</b><span>Oct</span><p>Sargi thalis packed before sunrise.</p></article>
+        <article class="fest"><b>Diwali</b><span>Oct–Nov</span><p>40+ mithai, dry-fruit hampers, corporate gifting.</p></article>
+        <article class="fest"><b>Gurpurab</b><span>Nov</span><p>Degh &amp; langar orders served with sewa.</p></article>
+        <article class="fest"><b>Weddings</b><span>All year</span><p>Bhaji boxes from 50 to 5,000 — we've done both.</p></article>
+      </div>
+    </section>
+
+    <!-- ░░ TESTIMONIALS ░░ -->
+    <section class="quotes section" id="quotes">
+      <div class="quotes__mark" aria-hidden="true">”</div>
+      <div class="quotes__stage" id="quoteStage">
+        <blockquote class="quote is-active">
+          <p>Thirty years of buying dodha from the same counter. My father brought me here; now my kids ask for "Bitta wali barfi" by name.</p>
+          <footer>— Harpreet S. · Gurdaspur</footer>
+        </blockquote>
+        <blockquote class="quote">
+          <p>They packed 700 wedding boxes overnight and every single jalebi was still crisp at the reception. Unmatched.</p>
+          <footer>— Simran &amp; Arjun · Pathankot</footer>
+        </blockquote>
+        <blockquote class="quote">
+          <p>I courier their pinni to my son in Canada every winter. He says it tastes like home — that's the whole review.</p>
+          <footer>— Kuldeep K. · Batala</footer>
+        </blockquote>
+        <blockquote class="quote">
+          <p>Best bakery in the district, hands down. The atta biscuits with evening chai are a family ritual now.</p>
+          <footer>— Dr. Mehak G. · Gurdaspur</footer>
+        </blockquote>
+      </div>
+      <div class="quotes__dots" id="quoteDots" role="tablist" aria-label="Testimonials"></div>
+    </section>
+
+    <!-- ░░ VISIT ░░ -->
+    <section class="visit section" id="visit">
+      <div class="section__head">
+        <p class="eyebrow reveal">ਆਓ ਜੀ · VISIT US</p>
+        <h2 class="reveal">The counter is <em>always warm</em></h2>
+      </div>
+      <div class="visit__grid">
+        <div class="visit__card reveal">
+          <h3>Find us</h3>
+          <address>
+            Bitta Sweets &amp; Bakers<br />
+            Kalbutri Gate,<br />
+            Gurdaspur, Punjab 143521, India
+          </address>
+          <a class="visit__link" href="https://maps.google.com/?q=Bitta+Sweets+Kalbutri+Gate+Gurdaspur+Punjab" target="_blank" rel="noopener">Get directions ↗</a>
+        </div>
+        <div class="visit__card reveal">
+          <h3>Talk to us</h3>
+          <p><a href="tel:+919815521990">+91 98155 21990</a><br />
+             <a href="tel:+911874220190">01874 220 190</a><br />
+             <a href="mailto:hello@bittasweets.in">hello@bittasweets.in</a></p>
+          <a class="visit__link" href="https://wa.me/919815521990" target="_blank" rel="noopener">WhatsApp us ↗</a>
+        </div>
+        <div class="visit__card reveal">
+          <h3>Hours</h3>
+          <p>Open every day<br /><b>8:00 am – 9:30 pm</b><br />Festival weeks: till 11 pm</p>
+          <a class="visit__link" href="#menu">Today's fresh list ↗</a>
+        </div>
+        <div class="visit__map reveal">
+          <iframe title="Bitta Sweets on the map — Gurdaspur, Punjab" id="mapFrame" data-src="https://www.google.com/maps?q=Kalbutri+Gate,+Gurdaspur,+Punjab+143521&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="nav__monogram nav__monogram--lg">B<small>S</small></span>
+        <p class="footer__name">BITTA <em>SWEETS</em></p>
+        <p class="footer__tag" lang="pa">ਮਿਠਾਸ ਵਿਰਾਸਤ ਦੀ · Since 1990</p>
+      </div>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#heritage">Our Story</a>
+        <a href="#signature">Signature</a>
+        <a href="#menu">Menu</a>
+        <a href="#gifting">Gifting</a>
+        <a href="#visit">Visit Us</a>
+      </nav>
+      <div class="footer__contact">
+        <p>Kalbutri Gate,<br />Gurdaspur, Punjab 143521</p>
+        <p><a href="tel:+919815521990">+91 98155 21990</a> · <a href="mailto:hello@bittasweets.in">hello@bittasweets.in</a></p>
+        <p class="footer__social">
+          <a href="https://instagram.com/bittasweets" target="_blank" rel="noopener">Instagram</a> ·
+          <a href="https://facebook.com/bittasweets" target="_blank" rel="noopener">Facebook</a> ·
+          <a href="https://wa.me/919815521990" target="_blank" rel="noopener">WhatsApp</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year">2026</span> Bitta Sweets &amp; Bakers, Gurdaspur. All rights reserved.</p>
+      <p>FSSAI Lic. No. 12122281000069 · Prices indicative &amp; subject to change</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
