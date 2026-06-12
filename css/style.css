@@ -61,6 +61,12 @@ body::after {
 }
 .preloader.is-done { clip-path: inset(0 0 100% 0); }
 .preloader__inner { text-align: center; }
+.preloader__logo {
+  width: min(460px, 76vw); height: auto; margin: 0 auto 30px; display: block;
+  opacity: 0; animation: logoIn 1.2s var(--ease) 0.1s forwards;
+  filter: drop-shadow(0 0 36px rgba(232,169,138,0.18));
+}
+@keyframes logoIn { from { opacity: 0; transform: scale(0.96); } to { opacity: 1; transform: scale(1); } }
 .preloader__ring {
   width: 128px; height: 128px; margin: 0 auto 18px; border-radius: 50%;
   border: 1px solid var(--line); position: relative;
@@ -125,6 +131,13 @@ body::after {
 }
 .nav.is-scrolled { background: rgba(11,8,7,0.82); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); border-bottom-color: var(--line); padding-top: 12px; padding-bottom: 12px; }
 .nav__brand { display: flex; align-items: center; gap: 14px; margin-right: auto; }
+.nav__mark {
+  width: 52px; height: 52px; border-radius: 50%; object-fit: cover; flex: 0 0 auto;
+  border: 1px solid var(--line);
+  transition: box-shadow 0.4s, transform 0.5s var(--ease);
+}
+.nav__brand:hover .nav__mark { box-shadow: 0 0 28px rgba(232,169,138,0.4); transform: rotate(-8deg) scale(1.04); }
+.footer__mark { width: 88px; height: 88px; border-radius: 50%; object-fit: cover; border: 1px solid var(--line); margin-bottom: 16px; }
 .nav__monogram {
   font-family: var(--serif); font-size: 26px; color: var(--rose);
   width: 48px; height: 48px; border: 1px solid var(--line); border-radius: 50%;
@@ -135,7 +148,11 @@ body::after {
 .nav__monogram small { font-size: 20px; color: var(--rose-light); margin: 8px 0 0 -2px; }
 .nav__brand:hover .nav__monogram { box-shadow: 0 0 28px rgba(232,169,138,0.35); transform: rotate(-6deg); }
 .nav__name { font-family: var(--serif); font-size: 17px; letter-spacing: 0.12em; line-height: 1.15; display: grid; }
-.nav__name em { color: var(--rose); font-style: normal; }
+.nav__name em {
+  font-style: normal;
+  background: linear-gradient(105deg, var(--rose-deep), var(--rose) 50%, var(--rose-light));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
 .nav__name b { font-family: var(--sans); font-weight: 400; font-size: 8.5px; letter-spacing: 0.42em; color: var(--muted); }
 .nav__links { display: flex; gap: clamp(14px, 2vw, 30px); }
 .nav__links a { font-size: 12.5px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); position: relative; padding: 6px 0; transition: color 0.3s; }
