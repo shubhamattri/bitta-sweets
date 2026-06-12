@@ -1,8 +1,8 @@
-# Bitta Sweets & Bakers — Website Handover
+# Bitta Sweets & Bakery — Website Handover
 
 ## Overview
 
-A premium, fully responsive single-page website for **Bitta Sweets & Bakers**, a heritage sweets and bakery shop in Kalbutri Gate, Gurdaspur, Punjab. The site showcases the shop's signature mithai, bakery range, gifting options, and heritage since 1990.
+A premium, fully responsive single-page website for **Bitta Sweets & Bakery**, a heritage sweets and bakery shop in Kalbutri Gate, Gurdaspur, Punjab. The site showcases the shop's signature mithai, bakery range, gifting options, and heritage since 1990.
 
 **Key Features:**
 - Pure static HTML/CSS/JavaScript — no build step, no backend required
@@ -310,7 +310,7 @@ The footer (lines 400–430) displays:
   FSSAI Lic. <b>12122281000069</b> · Established <b>1990</b>
 </p>
 <p>
-  <b>Bitta Sweets & Bakers</b><br />
+  <b>Bitta Sweets & Bakery</b><br />
   Kalbutri Gate, Gurdaspur, Punjab <b>143521</b><br />
   <a href="tel:+919815521990">+91 98155 21990</a>
 </p>
@@ -421,7 +421,7 @@ Before going live, verify these details:
    {
      "@context": "https://schema.org",
      "@type": "LocalBusiness",
-     "name": "Bitta Sweets & Bakers",
+     "name": "Bitta Sweets & Bakery",
      "image": "https://yourdomain.com/assets/hero.jpg",
      "address": {
        "@type": "PostalAddress",
@@ -566,7 +566,7 @@ For questions or enhancements:
 ---
 
 **Handover Date:** June 12, 2026  
-**Website:** Bitta Sweets & Bakers, Kalbutri Gate, Gurdaspur, Punjab 143521  
+**Website:** Bitta Sweets & Bakery, Kalbutri Gate, Gurdaspur, Punjab 143521  
 **FSSAI License:** 12122281000069  
 **Contact:** +91 98155 21990 (WhatsApp)  
 **Email:** hello@bittasweets.in
