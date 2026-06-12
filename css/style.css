@@ -62,11 +62,15 @@ body::after {
 .preloader.is-done { clip-path: inset(0 0 100% 0); }
 .preloader__inner { text-align: center; }
 .preloader__logo {
-  width: min(460px, 76vw); height: auto; margin: 0 auto 30px; display: block;
-  opacity: 0; animation: logoIn 1.2s var(--ease) 0.1s forwards;
-  filter: drop-shadow(0 0 36px rgba(232,169,138,0.18));
+  width: min(220px, 52vw); height: auto; aspect-ratio: 1; border-radius: 50%;
+  margin: 0 auto 34px; display: block; object-fit: cover;
+  opacity: 0; animation: logoIn 1.5s var(--ease) 0.1s forwards, ringGlow 2.6s ease 1.6s infinite;
 }
-@keyframes logoIn { from { opacity: 0; transform: scale(0.96); } to { opacity: 1; transform: scale(1); } }
+@keyframes logoIn {
+  0% { opacity: 0; filter: blur(16px); transform: scale(1.12); }
+  60% { opacity: 1; }
+  100% { opacity: 1; filter: blur(0); transform: scale(1); }
+}
 .preloader__ring {
   width: 128px; height: 128px; margin: 0 auto 18px; border-radius: 50%;
   border: 1px solid var(--line); position: relative;
@@ -133,11 +137,10 @@ body::after {
 .nav__brand { display: flex; align-items: center; gap: 14px; margin-right: auto; }
 .nav__mark {
   width: 52px; height: 52px; border-radius: 50%; object-fit: cover; flex: 0 0 auto;
-  border: 1px solid var(--line);
   transition: box-shadow 0.4s, transform 0.5s var(--ease);
 }
 .nav__brand:hover .nav__mark { box-shadow: 0 0 28px rgba(232,169,138,0.4); transform: rotate(-8deg) scale(1.04); }
-.footer__mark { width: 88px; height: 88px; border-radius: 50%; object-fit: cover; border: 1px solid var(--line); margin-bottom: 16px; }
+.footer__mark { width: 88px; height: 88px; border-radius: 50%; object-fit: cover; margin-bottom: 16px; }
 .nav__monogram {
   font-family: var(--serif); font-size: 26px; color: var(--rose);
   width: 48px; height: 48px; border: 1px solid var(--line); border-radius: 50%;
